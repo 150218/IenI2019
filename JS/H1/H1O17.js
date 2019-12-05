@@ -9,7 +9,7 @@ function setup() {
 function draw() {
   background('cornflowerblue');
   schaal = 1 + mouseY / height;
-
+  tekenZon(mouseX,schaal);
   // teken de grond
   fill('wheat');
   rect(0,250,width,height - 250);  
