@@ -6,7 +6,7 @@ function setup() {
   textFont("Verdana");
   textSize(19);
   noStroke();
-  frameRate(10);
+  frameRate(60);
 }
 
 function draw() {
@@ -14,8 +14,8 @@ function draw() {
   fill('white');
   rect(0,0,width,30);
   fill('black');  
-  text("Druk op een toets | huidig zoomniveau: " + round(10*zoomNiveau) / 10,5,20);
-  if (keyIsPressed == true) {
+  text("Druk op een muisknop | huidig zoomniveau: " + round(10*zoomNiveau) / 10,5,20);
+  if (mouseIsPressed == true) {
     zoomNiveau += 0.1;
   }
   else {
